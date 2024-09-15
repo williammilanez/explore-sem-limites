@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    /*10px*/
+    font-size: 62.5%;
+
+    /*font*/
+    font-family: "Mulish", sans-serif;
+
+    /*colors*/
+    --white: #FFFFFF;
+    --light-gray: #F9F4FB;
+    --dark-purple: #302C63;
+    --light-purple: #6D3BE2;
+    --pink: #B52184;
+}
+
+body {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+
+    color: var(--pink);
+
+    white-space: nowrap;
+}
+
+h1, h2, h3, .cape-text p {
+    white-space: nowrap;
+}
+
+h1 {
+    margin-top: 2.0rem;
+}
+
+h3 { 
+    font-size: 2.5rem;
+
+    margin-top: 3.5rem;
+}
+
+p {
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    background: linear-gradient(45deg, #B52184, #cf1892, #eb089f, #af0b78);
+    background-size: 500%, 100%;
+    animation: anima 5s linear infinite alternate;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    outline: none;
+}
+
+@keyframes anima {
+    0% {
+        background-position-x: 0%;
+
+    }
+
+    100% {
+        background-position: 500%;
+    }
+}
+
+/*cabeçalho*/
+header .astronaut img {
+    animation: astronauta-anima 2s ease-in-out infinite alternate;
+
+    background-size: contain;
+}
+
+@keyframes astronauta-anima {
+    0% {
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: 1.00;
+    }
+}
+
+header .cape-img {
+    width: 100%;
+}
+
+header .cape-text img:hover {
+    transform: scale(1.05);
+}
+
+.astronaut {
+    width: 100%;
+}
+
+.astronaut img {
+    width: 100%;
+}
+
+header p {
+    margin-bottom: 4rem;
+}
+
+header main p {
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.5rem;
+
+    color: var(--dark-purple);
+}
+
+main {
+    text-align: left;
+    background: linear-gradient(to right, #343193, #302C63);
+    
+    margin-top: 10rem;
+    padding-top: 0.1rem;
+}
+
+/*cards*/
+main .card {
+    background-color: var(--white);
+
+    margin: 5.0rem 4.0rem;
+    padding: 3.0rem;
+    border: 0.2rem solid var(--dark-purple);
+    border-radius: 2.0rem;
+}
+
+main .card:hover {
+    color: var(--light-purple);
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: -0.5rem 0.5rem 5.0rem 3.0rem var(--light-purple);
+}
+
+main #cards p {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    text-align: justify;
+
+    margin-top: 2.0rem;
+}
+
+.card .planet1 {
+    animation: rotate 9s linear infinite;
+}
+
+.card .planet2 {
+    animation: rotate 4s linear infinite;
+}
+
+.card .planet3 {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*contact*/
+main #contact {
+    background-color: var(--light-gray);
+    padding: 8.0rem 4.0rem 6.5rem;
+}
+
+main #contact a {
+    text-decoration: none;
+}
+
+main #contact h2 {
+    margin-bottom: 4rem;
+}
+
+main #contact input, textarea {
+    font-size: 1.6rem;
+    line-height: 100%;
+    border-radius: 1.6rem;
+    background-color: var(--light-gray)
+}
+
+main #contact .input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+main #contact .input-wrapper input, textarea {
+    flex-direction: row;
+    align-items: center;
+    padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+    gap: 1.2rem;
+
+    border: 0.2rem solid var(--dark-purple);
+    border-radius: 1.6rem;
+
+    margin: 1.2rem 0;
+
+    font-family: "Mulish", sans-serif;
+    color: var(--dark-purple);
+}
+
+::-webkit-input-placeholder {
+    color: var(--dark-purple)
+}
+
+main #contact .input-wrapper input:hover, textarea:hover {
+    border: 0.3rem solid var(--light-purple);
+    font-size: 1.8rem;
+    box-shadow: 0 0 1.5rem var(--light-purple);
+}
+
+main #contact .input-wrapper textarea {
+    flex-direction: row;
+    align-items: center;
+    align-items: flex-start;
+    padding: 1.2rem 1.6rem 1.6rem;
+    gap: 1.0rem;
+
+    height: 12.6rem;
+    margin: 1.2rem 0 2.4rem;
+}
+
+main #contact button {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    height: 4.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6rem;
+    gap: 1.0rem;
+
+    border: 0.2rem solid var(--dark-purple);
+    border-radius: 1.6rem;
+
+    color: var(--white);
+    background: linear-gradient(to right, #343193, #302C63);;
+}
+
+main #contact .button:hover {
+    background: var(--light-purple);
+    border: 0.3rem solid var(--light-purple);
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 0 1.5rem var(--light-purple);
+}
+
+main #contact #name {
+    background: url(/images/user.svg) no-repeat;
+    background-position: 1.4rem 1.0rem;
+    padding-left: 5.0rem;
+}
+
+main #contact #email {
+    background: url(/images/email.svg) no-repeat;
+    background-position: 1.4rem 1.0rem;
+    padding-left: 5.0rem;
+}
+
+/*rodapé*/
+footer {
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.4rem;
+
+    color: var(--white);
+    background: linear-gradient(to right, #343193, #302C63);
+
+    padding: 3.2rem 1.6rem;
+}
+
+@media (min-width: 1280px) {
+    /*cabeçalho*/
+    #cape-img {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .astronaut {
+        padding: 0 3.0rem 10.0rem 10.0rem;
+        width: 100%;
+    }
+    
+    .astronaut img {
+        width: 100%;
+    }
+
+    .cape-text {
+        width: 100%;
+    }
+
+    .cape-text h1 {
+        font-size: 6.0rem;
+        line-height: 7.0rem;
+        text-align: left;
+        margin: 22rem 2.0rem 0 10rem;
+    }
+
+    .cape-text p {
+        font-size: 3.2rem;
+        line-height: 4.0rem;
+        text-align: left;
+        margin: 0rem 2.0rem 18.0rem 10rem;
+
+    }
+
+    .cape-text a {
+        display: grid;
+        justify-content: start;
+        margin: 0rem 2.0rem 10rem 10rem
+    }
+
+    /*cards*/
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 4rem 4rem;
+        gap: 4rem
+    }
+
+    /*contact*/
+    #contact {
+        display: flex;
+        align-items: center;
+        height: 62.2rem;
+        margin: 0 auto;
+        background: url(./images/pink-stars.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        animation: stars 5s ease-in-out infinite alternate;
+    }
+
+    @keyframes stars {
+        0% {
+            background-position-x: 100%;
+
+        }
+    
+        100% {
+            background-position: 105%;
+        }
+    }
+
+    #contact form {
+        flex: 1;
+        margin-left: 4rem;
+        padding-right: 14rem;
+      }
+
+      #contact .pink-stars {
+        flex: 1;
+      }
+}
+
+
+

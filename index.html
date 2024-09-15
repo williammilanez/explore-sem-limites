@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore sem limites - Projeto</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="container">
+            <section id="cape-img">
+                <div class="astronaut">
+                    <img src="/images/astronaut-mobile.svg" alt="Imagem de um astronauta no espaço">
+                </div>
+
+                <div class="cape-text">
+                    <h1>Explore sem limites</h1>
+
+                    <p>Porque o aprendizado é contínuo</p>
+
+                    <a href="#cards" class="down-arrow">
+                        <img src="/images/down-arrow.svg" alt="Clique para ir para os cartões">
+                    </a>
+                </div>
+            </section>
+        </header>
+
+        <main class="container">
+            <section id="cards">
+                <div class="card">
+                    <img class="planet1" src="/images/yellow-moon.svg" alt="imagem de um planeta amarelo">
+
+                    <div class="card-text">
+                        <h3>Não pare nunca</h3>
+
+                        <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="planet2" src="/images/blue-moon.svg" alt="imagem de um planeta azul">
+
+                    <div class="card-text">
+                        <h3>Só volta</h3>
+
+                        <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="planet3" src="/images/pink-moon.svg" alt="imagem de um planeta rosa">
+
+                    <div class="card-text">
+                        <h3>Siga seu ritmo</h3>
+
+                        <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <form>
+                    <a href="#contact"><h2>Entre em contato</h2></a>
+                    
+                    <div class="input-wrapper">
+                        <input id="name" type="text" maxlength="30" placeholder="Seu nome" required />
+                    </div>
+
+                    <div class="input-wrapper">
+                        <input id="email" type="email" maxlength="30" placeholder="Email" required />
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <textarea id="text" placeholder="Digite sua mensagem aqui..." style="resize: none" maxlength="500" required></textarea>
+                    </div>
+
+                    <button class="button" type="submit">Enviar mensagem</button>
+                </form>
+
+                <div class="pink-stars">
+                    <!-- <img src="./images/pink-stars.svg" /> -->
+                </div>
+            </section>
+        </main>
+        
+        <footer class="container">
+            <section id="copyright">
+                <p>© 2023 - Rocketseat Explorer</p>
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
+
+
