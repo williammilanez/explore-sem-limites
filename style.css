@@ -263,13 +263,13 @@ main #contact .button:hover {
 }
 
 main #contact #name {
-    background: url(/images/user.svg) no-repeat;
+    background: url(./images/user.svg) no-repeat;
     background-position: 1.4rem 1.0rem;
     padding-left: 5.0rem;
 }
 
 main #contact #email {
-    background: url(/images/email.svg) no-repeat;
+    background: url(./images/email.svg) no-repeat;
     background-position: 1.4rem 1.0rem;
     padding-left: 5.0rem;
 }
